@@ -7,9 +7,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EmailComponent implements OnInit {
 
+  data = {
+
+    to : "",
+    subject:"",
+    message:""
+
+  }
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  doSubmitForm()
+  {
+  console.log("try to submit form")
   }
 
 }
